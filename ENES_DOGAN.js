@@ -2,8 +2,7 @@
   let products = [];
   let favoriteProducts = [];
 
-  const BASE_API_URL =
-    "https://gist.githubusercontent.com/sevindi/8bcbde9f02c1d4abe112809c974e1f49/raw/9bf93b58df623a9b16f1db721cd0a7a539296cf0/products.json";
+  const BASE_API_URL = "https://gist.githubusercontent.com/sevindi/8bcbde9f02c1d4abe112809c974e1f49/raw/9bf93b58df623a9b16f1db721cd0a7a539296cf0/products.json";
 
   const init = async () => {
     if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
@@ -82,9 +81,11 @@
               }" data-product-id="${id}">
               <!-- Generate favorite icon -->
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none">
-                  <path d="M17.367 1.594c-2.021-1.981-5.3-1.981-7.321 0L10 1.64l-.046-.046c-2.021-1.981-5.3-1.981-7.321 0-2.022 1.98-2.022 5.193 0 7.173L10 16.4l7.367-7.633c2.022-1.98 2.022-5.193 0-7.173z" stroke="currentColor" stroke-width="1.5" fill="${
-                    isFavorite ? "#ff8c00" : "none"
-                  }"/>
+                  <path d="M17.367 1.594c-2.021-1.981-5.3-1.981-7.321
+                   0L10 1.64l-.046-.046c-2.021-1.981-5.3-1.981-7.321 0-2.022
+                    1.98-2.022 5.193 0 7.173L10 16.4l7.367-7.633c2.022-1.98 
+                    2.022-5.193 0-7.173z" stroke="currentColor" stroke-width="1.5" 
+                    fill="${isFavorite ? "#ff8c00" : "none"}"/>
                 </svg>
               </button>
             </div>
